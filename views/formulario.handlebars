@@ -1,0 +1,18 @@
+{{#each erros}}
+
+<div>
+    <p>{{texto}}</p>
+</div>
+{{else}}
+
+{{/each}}
+
+<form action="/add" method="post">
+    <p>Nome</p>
+    <input type="text" name="nome" id="nome">
+    <p>Idade</p>
+    <input type="text" name="idade" id="idade">
+     <p>Ano de carreira</p>
+    <input type="text" name="anoDeCarreira" id="anoDeCarreira">
+    <button type="submit">Enviar</button>
+</form>
