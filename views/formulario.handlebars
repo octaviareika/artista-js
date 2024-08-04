@@ -7,12 +7,20 @@
 
 {{/each}}
 
-<form action="/add" method="post">
-    <p>Nome</p>
-    <input type="text" name="nome" id="nome">
-    <p>Idade</p>
-    <input type="text" name="idade" id="idade">
-     <p>Ano de carreira</p>
-    <input type="text" name="anoDeCarreira" id="anoDeCarreira">
-    <button type="submit">Enviar</button>
+<form class="row g-3">
+  <div class="col-auto">
+    <label for="nome" class="visually-hidden">Nome</label>
+    <input type="text" readonly class="form-control-plaintext" id="nome" name="nome" placeholder="Nome">
+  </div>
+  <div class="col-auto">
+    <label for="idade" class="visually-hidden">Idade</label>
+    <input type="text" class="form-control" id="idade" name="idade" placeholder="Idade">
+  </div>
+  <div class="col-auto">
+    <label for="anoDeCarreira" class="visually-hidden">Tempo profissional</label>
+    <input type="text" class="form-control" id="anoDeCarreira" name="anoDeCarreira" placeholder="Ano de carreira">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Cadastrar</button>
+  </div>
 </form>

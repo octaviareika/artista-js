@@ -31,7 +31,7 @@ app.engine('handlebars', engine({
 
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'views'));
-
+app.use(express.static('public'));
 
 // Body Parser
 app.use(bodyParser.urlencoded({extended: false}));
