@@ -101,6 +101,12 @@ app.post('/add', (req, res) => {
     
 })
 
+// editar artista
+app.get('/artistas/edit/:id', (req, res) => {
+    res.send('Página de edição');
+
+})
+
 
 app.listen(8082, (erro) => {
     if(erro) {
